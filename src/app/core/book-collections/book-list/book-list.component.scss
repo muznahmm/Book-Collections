@@ -1,0 +1,33 @@
+.book-container {
+    display: flex;
+    flex-direction: row;
+    .book-thumbnail {
+        border: none;
+        margin: 20px;
+        border-radius: 20px;
+        background: rgb(210, 210, 169);
+        padding: 20px;
+        li {
+            list-style: none;
+            font-weight: bold;
+        }
+        img {
+            box-sizing: border-box;
+            width: 160px;
+            height: 180px;
+        }
+        .book-details {
+            .book-price {
+                color: rgb(23, 198, 111);
+            }
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            button {
+                border: none;
+                background: none;
+            }
+        }
+    }
+}

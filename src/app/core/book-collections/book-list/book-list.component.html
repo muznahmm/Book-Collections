@@ -1,0 +1,20 @@
+<div>
+    <button (click)="addNewBook()">Add New Book</button>
+</div>
+<div class="book-container">
+    <ng-container *ngFor="let book of books;">
+        <ul class="book-thumbnail">
+            <img src="{{book.image}}" />
+            <div class="book-details">
+                <li>
+                    {{ book.title }}
+                </li>
+                <li class="book-price">{{book.price}}</li>
+            </div>
+            <div class="button-group">
+                <li><button (click)="editBook(book.id)"><i class="fa fa-sharp fa-light fa-pencil"></i></button></li>
+                <li><button (click)="deleteBook(book.id)"><i class="fa fa-sharp fa-light fa-trash"></i></button></li>
+            </div>
+        </ul>
+    </ng-container>
+</div>
